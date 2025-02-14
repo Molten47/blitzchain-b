@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Navbar from './Components/Navbar/Navbar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
 import Roadmap from './pages/Roadmap'
 import Services from './pages/Services'
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-     <BrowserRouter>
+     <HashRouter>
       <div>
       
         <Navbar />
@@ -29,7 +29,7 @@ function App() {
           <Route path='/ecosystem' element={<Ecosystems/>}/>
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   
     </>
   )
