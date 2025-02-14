@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Clash Grotesk';
+    src: url('../../assets/fonts/ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Medium.woff') format('woff2'),
+         url('fonts/ClashGrotesk-Regular.woff') format('woff');
+    font-weight: 400; /* Adjust weight based on file */
+    font-style: normal; /* Adjust style if italic is included */
+  }
+  .nav-menu ul{
+    font-family: 'Clash Grotesk', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    gap: 2rem;
+  }
+  .nav-menu button{
+    color: white;
+  }
+  /* Navbar.css */
+.nav-menu ul li {
+  position: relative;
+}
+
+.nav-menu ul li:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 50px;
+  height: 2px; /* Thickness of the underline */
+  background: linear-gradient(90deg, #012A93 , #ECBFBF, #7628B5, #D9D04F);
+}

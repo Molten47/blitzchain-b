@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Clash Grotesk';
+  src: url('../../assets/fonts/ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Medium.woff') format('woff2'),
+       url('fonts/ClashGrotesk-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero h1 {
+  font-family: 'Clash Grotesk', sans-serif;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg, #012A93, #ECBFBF, #7628B5, #D9D04F);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  font-family: 'Clash Grotesk', sans-serif;
+  text-wrap: nowrap;
+}
+
+.eco {
+  padding: 0.85em 1.42em;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  font-family: 'Space Grotesk', serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.eco:hover {
+  background: #fff;
+  color: #000;
+}
+
+.start {
+  padding: 0.85em 1.42em;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Space Grotesk', serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.start::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  background: linear-gradient(260deg, #E0D757, #BFC3EC, #081302, #01275E) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, 
+                linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.start:hover {
+  background: linear-gradient(260deg, #E0D757, #BFC3EC, #081302, #01275E);
+  color: #fff;
+}
+/* Add this to your Hero.css */
+.foot-image img {
+  will-change: opacity;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .foot-image img {
+    transition: opacity 0.3s ease-in-out;
+  }
+}
